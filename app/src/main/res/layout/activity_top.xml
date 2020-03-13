@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CoordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ProductGrid"
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="474dp">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/CollapsingToolbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:collapsedTitleTextAppearance="@style/TextAppearance.Shrine.Logo"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleGravity="top"
+            app:expandedTitleMarginStart="124dp"
+            app:expandedTitleMarginTop="124dp"
+            app:expandedTitleTextAppearance="@style/TextAppearance.Shrine.Logo"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+            <ImageView
+                android:id="@+id/CollapsingToolbarImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:background="@mipmap/ic_launcher"
+                android:adjustViewBounds="true"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.7"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="232dp"
+                android:layout_marginStart="124dp"
+                android:layout_marginEnd="16dp"
+                android:layout_gravity="top"
+                android:orientation="vertical"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.7">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Best haahah   hahahah "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:text="你说话三生三世  和实话实说"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"/>
+            </LinearLayout>
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/AppBar"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                app:layout_collapseMode="pin"
+                tools:ignore="UnusedAttribute"/>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <!--<com.google.android.material.bottomnavigation.BottomNavigationView-->
+        <!--android:id="@+id/BottomNavView"-->
+        <!--style="@style/Shrine.BottomNavView"-->
+        <!--app:menu="@menu/shrine_bottom_nav_view_menu"/>-->
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

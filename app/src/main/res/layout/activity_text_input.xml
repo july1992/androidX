@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_host"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+
+        app:hintEnabled="true"
+        android:hint="婚纱哈哈哈"
+        android:background="#c3c3c3"
+        android:textColorHint="#c3ffc3"
+        app:boxBackgroundColor="#00000000"
+        app:hintTextAppearance="@style/myStyle"
+        app:boxStrokeColor="#fff444"
+
+        app:hintAnimationEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_host"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+
+            android:background="#ffffff"
+
+            android:textColor="#0044ff33"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sssss"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/textInputSignInStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+
+        app:endIconMode="password_toggle"
+
+
+        >
+        <!--android:background="@drawable/input_layput"-->
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="shashsahahahahaha "
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>
