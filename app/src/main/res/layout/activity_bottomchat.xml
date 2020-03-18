@@ -12,9 +12,16 @@
         android:onClick="add"/>
 
 
-    <!--<EditText-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content" />-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#66c3c3c3"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
 
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -22,19 +29,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
        >
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_list"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
 
-        </androidx.recyclerview.widget.RecyclerView>
         <LinearLayout
             android:id="@+id/design_bottom_sheet"
             style="?attr/bottomSheetStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#fff000"
+
             android:orientation="vertical"
             app:layout_behavior="@string/bottom_sheet_behavior">
 
@@ -52,19 +53,28 @@
                     />
 
                 <EditText
+                    android:id="@+id/et_input"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1" />
 
                 <ImageView
+                    android:id="@+id/iv_emoji"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher" />
+                <ImageView
+                    android:id="@+id/iv_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
                     android:src="@mipmap/ic_launcher" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="400dp">
+                android:layout_height="600dp"
+                android:background="#fff000">
 
 
             </LinearLayout>

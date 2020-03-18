@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
-            android:name=".TextInputLayoutAc"
+            android:name=".MainAc"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustNothing"
@@ -22,6 +23,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".BottomChatAc" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name=".BottomSheetAc" />
+        <activity android:name=".ScrollingActivity" />
+        <activity android:name=".transition.TransitionAc" />
+        <activity android:name=".transition.TransitionFadeAc" />
+        <activity android:name=".PopuMenuAc"      />
+        <activity android:name=".TextInputLayoutAc"  android:theme="@style/textInputSignInStyle"/>
 
     </application>
 

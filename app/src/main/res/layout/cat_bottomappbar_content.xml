@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:orientation="vertical">
+
+            <ToggleButton
+                android:id="@+id/bar_scroll_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textOff="关上"
+                android:textOn="打开"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp">
+
+                <Button
+                    android:id="@+id/center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:insetLeft="4dp"
+                    android:insetRight="4dp"
+                    android:text="center"/>
+
+                <Button
+                    android:id="@+id/end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:insetLeft="4dp"
+                    android:insetRight="4dp"
+                    android:text="end"/>
+
+                <ToggleButton
+                    android:id="@+id/attach_toggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOff="显示fab"
+                    android:textOn="不显示fab"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_scroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="跳转scrolling"/>
+
+            <Button
+                android:id="@+id/btn_bottom_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="跳转bottom_chat"/>
+
+            <Button
+                android:id="@+id/btn_bottom_sheet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="跳转bottom_sheet"/>
+
+            <Button
+                android:id="@+id/btn_transition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="跳转transition"/>
+            <Button
+                android:id="@+id/btn_transition_fade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="跳转transition fade"/>
+
+            <Button
+                android:id="@+id/btn_popu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="popu menu"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="哈哈哈哈哈哈哈很适合水水水水好好说说和"/>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</merge>
